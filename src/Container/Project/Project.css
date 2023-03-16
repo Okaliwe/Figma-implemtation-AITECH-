@@ -1,0 +1,108 @@
+.project{
+     display: flex;
+     flex-direction: column;
+     padding: 2rem;
+     width: 90%;
+     margin-left: 5%;
+     background: var(--color-footer);
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    filter:drop-shadow(0px 4px 4px rgba(4,12,24,1))
+}
+.feature{
+    display: flex;
+}
+.project-container-feature{
+    margin: 0;
+}
+
+.project-container-text{
+    max-width: 700px;
+}
+.feature-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+}
+.feature-header h1{
+    font-weight: 800px;
+    font-family: var(--font-family);
+    line-height: 45px;
+    font-size: 34px;
+    max-width: 510px;
+}
+.feature-header p{
+    font-weight: 500px;
+    font-family: var(--font-family);
+    line-height: 30px;
+    font-size: 16px;
+    color: var(--color-subtext);
+}
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+.project-container .featur{
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+
+}
+.feature-text{
+    margin-top: 0.5;
+}
+@media screen and (max-width: 850px) {
+    .feature-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .feature-header p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .feature .featur {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .feature .feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .feature-header h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .project-container .feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}

@@ -1,0 +1,6 @@
+export{default as Fixtures} from './Fixtures/Fixtures'
+export{default as Footer} from './footer/Footer'
+export{default as Header} from './Header/Header'
+export{default as Possibilty} from './Possibilty/Possibility'
+export{default as Post} from './Post/Post.jsx'
+export{default as Project} from './Project/Project'
